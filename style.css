@@ -63,15 +63,6 @@ img {
   display: flex;
   flex-direction: row;
 }
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column; /* Ubah menu dari menyamping jadi menumpuk ke bawah */
-  }
-
-  h1 {
-    font-size: 24px; /* Kecilkan ukuran font judul agar tidak terpotong */
-  }
-}
 img {
   display: block;
   max-width: 100%;
@@ -933,7 +924,14 @@ svg {
     max-width: 1024px;
   }
 }
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Ubah menu dari menyamping jadi menumpuk ke bawah */
+  }
 
+  h1 {
+    font-size: 24px; /* Kecilkan ukuran font judul agar tidak terpotong */
+  }
 @media (max-width: 767px) {
   .elementor-section.elementor-section-boxed > .elementor-container,
   .e-con {
