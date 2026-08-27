@@ -50,7 +50,28 @@ body {
 body.tk-menu-open {
   overflow: hidden;
 }
+img {
+  max-width:100%;
+  height:auto;
+}
+.card-container{
+  display:flex;
+  flex-wrap: wrap;
+  gap:20px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Ubah menu dari menyamping jadi menumpuk ke bawah */
+  }
 
+  h1 {
+    font-size: 24px; /* Kecilkan ukuran font judul agar tidak terpotong */
+  }
+}
 img {
   display: block;
   max-width: 100%;
