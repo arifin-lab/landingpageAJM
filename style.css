@@ -26,6 +26,36 @@
   --wp--preset--font-size--large: 36px;
   --wp--preset--font-size--x-large: 42px;
 }
+/* Style Tampilan HP / Smartphone (Portrait) */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* Mengubah susunan menjadi menumpuk ke bawah */
+    text-align: center;
+  }
+
+  .hero-text, .hero-image {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto; /* Memastikan gambar tidak meluap keluar layar HP */
+  }
+
+  /* Penyesuaian ukuran font di HP */
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+/* LEBIH TEPAT (Fleksibel) */
+.box {
+  width: 100%;
+  max-width: 1000px;
+}
 
 /* Reset & Global Elements */
 * {
